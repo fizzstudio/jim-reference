@@ -1,0 +1,26 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs|test/)"
+  },
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": [
+    "node_modules/kis-jsdoc-plugin"
+  ],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "markdown": {
+      "tocfilename": "README.md"
+    }
+  },
+  "opts": {
+    "recurse": true,
+    "template": ".jsdoc/templates/markdown-output",
+    "encoding": "utf8",
+    "destination": "./docs/"
+  }
+}

@@ -1,0 +1,22 @@
+{{#if constants}}
+
+## Constants
+{{#each constants}}
+
+### `{{name}}`
+
+{{> modifiers}}
+
+{{description}}
+{{> parameters }}
+
+#### Value
+
+```javascript
+{{{valuecode}}}
+```
+{{> examples level='####' }}
+
+---
+{{/each}}
+{{/if}}
